@@ -1,0 +1,15 @@
+<h1>Usuario</h1>
+
+<dl>
+    <dt>Nombre</dt>
+    <dd><%= @person.nombre %></dd>
+    <dt>Identificacion</dt>
+    <dd><%= @person.identificacion %></dd>
+    <dt>Genero</dt>
+    <dd><%= @person.genero %></dd>
+    <dt>Estado</dt>
+    <dd><%= @person.genero %></dd>
+</dl>
+
+<%= link_to "lista de usuarios", people_path %> |
+<%= link_to "Editar", edit_person_path(@person) %> 

@@ -1,0 +1,19 @@
+<h1>Lista de usuarios</h1>
+
+<table class="table">
+  <thead class="table table-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Identificación</th>
+      <th scope="col">Genero</th>
+      <th scope="col">Estado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render 'person' %>
+  </tbody>
+  
+</table>
+
+<%= link_to "Agregar usuario", new_person_path %> 

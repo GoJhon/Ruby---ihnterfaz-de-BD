@@ -1,0 +1,11 @@
+<% @person.each do |person|%>
+    <tr>
+        <th scope="row"><%= person.id %></th>
+        <td>
+            <%= link_to person.identificacion, person_path(person.id) %>
+        </td>
+        <td><%= person.nombre %></td>
+        <td><%= person.genero %></td>
+        <td><%= person.estado %></td>
+    </tr>
+<% end %>
